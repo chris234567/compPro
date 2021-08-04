@@ -1,1 +1,1 @@
-# CPPcompPro
+# compPro
