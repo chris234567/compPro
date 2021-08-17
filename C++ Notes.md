@@ -1,19 +1,19 @@
 # C++ Notes
 
-`#include <bits/stdc++.h>` ⇒ importiert komplette standard bibliothek
+`#include <bits/stdc++.h>` ⇒ imports complete standard library
 
-`using std` ⇒ verkürzt Aufrufe wie `std::cout` zu `cout`
+`using std` ⇒ shortens calls like  `std::cout`  to  `cout`
 
 compile command: `g++ -std=c++11 -O2 -Wall test.cpp -o test`
 
-- -std=c++11: compiler verwendet c++11 standard
-- -02: code wird optimiert
-- -Wall: warnings werden gezeigt
+- -std=c++11: compiler uses c++11 standard
+- -02: code gets optimized
+- -Wall: warnings will be shown
 
 **Input:** `cin >> VARIABLE`>> .. 
 
-- kann erweitert werden pro mit mind. 1 Leerzeichen getrenntem Eintrag
-- *Beispiel:*
+- can be extended with at least one space between entries
+- *Example:*
 
     Input file
 
@@ -63,3 +63,19 @@ compile command: `g++ -std=c++11 -O2 -Wall test.cpp -o test`
     ```
 
 *printf/scanf faster but more difficult to use
+
+**Working with files:**
+
+```cpp
+freopen("input.txt", "r", stdin);
+freopen("output.txt", "w", stdout);
+```
+
+### Numbers
+
+**Most used numeric types:**
+
+- $−2·10^9$  <  `int`  <  $2·10^9$  (32bit)   e.g.   `int i = 123;`
+- $−9·10^{18}$  <  `long long`  <  $9·10^{18}$  (64bit)   e.g.   `long long l = 123LL;`
+
+...
