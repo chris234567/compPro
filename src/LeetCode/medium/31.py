@@ -1,9 +1,10 @@
 # 36. Valid Sudoku
 # https://leetcode.com/problems/valid-sudoku/
 
-import time
+from typing import List 
 
-def solve(board):
+
+def solve(board: List[List[int]]) -> bool:
     d = {
         0: [[], [], [], [], [], [], [], [], []],  # Row
         1: [[], [], [], [], [], [], [], [], []],  # Col
